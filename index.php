@@ -8,13 +8,15 @@
 
 <body>
     
-    <div class="container">
-    <div>header</div>
+<div class="container">
+    <div class="head">
+        <img src="images/head.jpg" alt="header image" />
+    </div>
     <div>menu</div>
-        <div>post body</div>
+    <div>post body</div>
     <div>sidebar</div>
     <div>footer</div>
-    </div>
+</div>
 
 </body>
 </html>
