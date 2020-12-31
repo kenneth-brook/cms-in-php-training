@@ -14,11 +14,17 @@
     </div>
     <nav class="nav">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Html/css</a></li>
-            <li><a href="#">JavaScript</a></li>
-            <li><a href="#">Python</a></li>
-            <li><a href="#">PHP</a></li>
+            <?php
+            include("includes/DB_connect.php");
+            $get_cats = "select * from catagories";
+            $run_cats = mysql_query($get_cats);
+            while ($cats_row=mysql_fetch_array($run_cats)){
+                $cat_id=$cats_row['cat_id'];
+                $cat_title=$cats_row['cat_title'];
+
+                echo "<li><a herf='index.php?cat=$cat_id'>$cat_title</a></li>";
+            };
+            ?>
         </ul>
     </nav>
     <div>
