@@ -193,6 +193,7 @@ body {
 	min-height: 600px;
 	background-color: cornflowerblue;
 	float: left;
+	font-size: 2rem;
 }
 
 /* Side Bar */
@@ -202,6 +203,7 @@ body {
 	min-height: 600px;
 	background-color: darkgreen;
 	float: right;
+	font-size: 2rem;
 }
 
 /*footer*/
@@ -212,4 +214,5 @@ body {
 	min-height: 100px;
 	color: white;
 	clear: both;
+	font-size: 2rem;
 }
