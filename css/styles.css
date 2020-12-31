@@ -167,8 +167,23 @@ body {
 	width: 1000px;
 	background-color: black;
 	height: 50px;
-	color: white;
 	font-size: 3.5rem;
+	padding-top: 17px;
+}
+
+.nav li {
+	list-style-type: none;
+	display: inline;
+}
+
+.nav a {
+	text-decoration: none;
+	color: white;
+	margin-left: 15px;
+}
+
+.nav a:hover {
+	color: lime;
 }
 
 /*Main Content*/
