@@ -128,7 +128,15 @@ table {
 	border-spacing: 0;
 }
 
+/*Global*/
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
 /*main index*/
+/*header*/
 
 body {
 	background-color: #666;
@@ -150,4 +158,41 @@ body {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+/*Nav Bar*/
+
+.nav {
+	width: 1000px;
+	background-color: black;
+	height: 50px;
+	color: white;
+	font-size: 3.5rem;
+}
+
+/*Main Content*/
+
+.main {
+	width: 750px;
+	min-height: 500px;
+	background-color: cornflowerblue;
+	float: left;
+}
+
+/* Side Bar */
+
+.side {
+	width: 250px;
+	min-height: 500px;
+	background-color: darkgreen;
+	float: right;
+}
+
+/*footer*/
+
+.bottom {
+	width: 1000px;
+	background-color: darkred;
+	min-height: 150px;
+	color: white;
 }

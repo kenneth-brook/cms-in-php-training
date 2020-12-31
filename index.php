@@ -12,10 +12,12 @@
     <div class="head">
         <img src="images/head.jpg" alt="header image" />
     </div>
-    <div>menu</div>
-    <div>post body</div>
-    <div>sidebar</div>
-    <div>footer</div>
+    <nav class="nav">menu</nav>
+    <div>
+        <article class="main">post body</article>
+        <aside class="side">sidebar</aside>
+    </div>
+    <footer class="bottom">footer</footer>
 </div>
 
 </body>
