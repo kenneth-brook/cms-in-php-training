@@ -16,9 +16,9 @@
         <ul>
             <?php
             include("includes/DB_connect.php");
-            $get_cats = "select * from catagories";
-            $run_cats = mysql_query($get_cats);
-            while ($cats_row=mysql_fetch_array($run_cats)){
+            $get_cats = "SELECT * FROM catagories";
+            $run_cats = mysqli_query($sql, $get_cats);
+            while ($cats_row=mysqli_fetch_array($run_cats)){
                 $cat_id=$cats_row['cat_id'];
                 $cat_title=$cats_row['cat_title'];
 
