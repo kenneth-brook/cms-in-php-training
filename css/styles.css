@@ -171,6 +171,10 @@ body {
 	padding-top: 17px;
 }
 
+.nav ul {
+	float: left;
+}
+
 .nav li {
 	list-style-type: none;
 	display: inline;
@@ -184,6 +188,12 @@ body {
 
 .nav a:hover {
 	color: lime;
+}
+
+.search {
+	float: right;
+	line-height: 50px;
+	padding-right: 3px;
 }
 
 /*Main Content*/

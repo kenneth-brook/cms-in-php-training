@@ -26,6 +26,12 @@
             };
             ?>
         </ul>
+        <div class="search">
+            <form method="get" action="results.php" enctype="multipart/form-data">
+                <input type="text" name="search_query" />
+                <input type="submit" name="search" value="Search" />
+            </form>
+        </div>
     </nav>
     <div>
         <article class="main">post body</article>
