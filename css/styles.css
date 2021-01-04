@@ -221,7 +221,7 @@ body {
 .bottom {
 	width: 1000px;
 	background-color: darkred;
-	min-height: 100px;
+	min-height: 75px;
 	color: white;
 	clear: both;
 	font-size: 2rem;
