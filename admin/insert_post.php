@@ -3,6 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>title</title>
+
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script>tinymce.init({selector:'textarea'});</script>
 </head>
 
 <body>
@@ -19,7 +22,7 @@
             <td align="right">Post Category:</td>
             <td>
                 <select name="cat">
-                    <option>Select A Category</option>
+                    <option value="select">Select A Category</option>
                     <?php
                         include("../includes/DB_connect.php");
                         $get_cats = "SELECT * FROM catagories";
@@ -36,19 +39,19 @@
         </tr>
         <tr>
             <td align="right">Post Author:</td>
-            <td><input type="text" name="post_title" /></td>
+            <td><input type="text" name="post_author" /></td>
         </tr>
         <tr>
             <td align="right">Post Keywords:</td>
-            <td><input type="text" name="post_title" /></td>
+            <td><input type="text" name="post_keywords" /></td>
         </tr>
         <tr>
             <td align="right">Post Image:</td>
-            <td><input type="text" name="post_title" /></td>
+            <td><input type="file" name="post_image" /></td>
         </tr>
         <tr>
             <td align="right">Post Content:</td>
-            <td><textarea name="post_content" rows="12" cols="50"></textarea></td>
+            <td><textarea name="post_content" rows="20" cols="50"></textarea></td>
         </tr>
         <tr>
             <td colspan="6" align="center"><input type="submit" name="submit" value="Submit" /></td>
@@ -57,3 +60,24 @@
 </form>
 </body>
 </html>
+
+<?php
+    if(isset($_POST['submit'])){
+        $post_title = $_POST['post_title'];
+        $post_date = date('m-d-y');
+        $post_cat = $_POST['cat'];
+        $post_author = $_POST['post_author'];
+        $post_keywords = $_POST['post_keywords'];
+        $post_image = $_FILES['post_image']['name'];
+        $post_image_tmp = $_FILES['post_image']['tmp_name'];
+        $post_content = $_POST['post_content'];
+    }
+
+    if($post_title=='' OR $post_cat=='select' OR $post_author=='' OR $post_keywords=='' OR $post_image=='' OR $post_content==''){
+        echo "<script>alert('All form areas must contain data')</script>";
+        exit();
+    }
+    else {
+        
+    }
+?>
