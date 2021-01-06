@@ -82,9 +82,7 @@
         $insert_posts = "insert into posts (category_id, post_title, post_date, post_author, post_keywords, post_image, post_content) values ('$post_cat', '$post_title', '$post_date', '$post_author', '$post_keywords', '$post_image', '$post_content')";
 
         $run_posts = mysqli_query($sql, $insert_posts);
-        if(mysqli_query($sql, $run_posts)){
             echo "<script>alert('Post Created!')</script>";
             echo "<script>window.open('insert_post.php','_self')</script>";
-        }
     }
 ?>
