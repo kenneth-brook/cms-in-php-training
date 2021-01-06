@@ -48,7 +48,7 @@
         </tr>
         <tr>
             <td align="right">Post Content:</td>
-            <td><input type="text" name="post_title" /></td>
+            <td><textarea name="post_content" rows="12" cols="50"></textarea></td>
         </tr>
         <tr>
             <td colspan="6" align="center"><input type="submit" name="submit" value="Submit" /></td>
