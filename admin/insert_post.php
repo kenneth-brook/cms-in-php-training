@@ -79,22 +79,7 @@
     }
     else {
         move_uploaded_file($post_image_tmp, "post_images/$post_image");
-        $insert_posts = "insert into posts (
-            category_id, 
-            post_title, 
-            post_date, 
-            post_author, 
-            post_keywords, 
-            post_image, 
-            post_content) 
-            values (
-                '$post_cat', 
-                '$post_title', 
-                '$post_date', 
-                '$post_author', 
-                '$post_keywords', 
-                '$post_image', 
-                '$post_content')";
+        $insert_posts = "insert into posts (category_id, post_title, post_date, post_author, post_keywords, post_image, post_content) values ('$post_cat', '$post_title', '$post_date', '$post_author', '$post_keywords', '$post_image', '$post_content')";
 
         $run_posts = mysqli_query($sql, $insert_posts);
             echo "<script>alert('Post Created!')</script>";
